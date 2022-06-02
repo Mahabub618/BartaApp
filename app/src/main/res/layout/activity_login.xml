@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/app_logo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_background"
+        android:hint="Email"
+        android:paddingLeft="13dp" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/edt_email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_background"
+        android:hint="Password"
+        android:paddingLeft="13dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_background"
+        android:text="LOG IN"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    <!--    <Button-->
+    <!--        android:id="@+id/btnSignUp"-->
+    <!--        android:layout_width="150dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/btnLogin"-->
+    <!--        android:text="SIGN UP"-->
+    <!--        android:background="@drawable/btn_background"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="10dp"/>-->
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Forgot Password?"
+        android:textColor="@color/teal_200"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:backgroundTint="#93ACD8"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="CREATE NEW BARTA ACCOUNT"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</RelativeLayout>
